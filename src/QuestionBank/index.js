@@ -4,15 +4,18 @@ export const questionsAndOptions = [
         options: [
             { 
            optionTitle: 'Online learning', // almost finished need something for null.
-             pointsTo: 2
+             pointsTo: 2, 
+             typeOfAnswer: 'A'
             }, 
             {
             optionTitle: 'Face-face-interaction', // done here for now. 
-            pointsTo: 3                
+            pointsTo: 3, 
+            typeOfAnswer: 'B',             
             }, 
             {
             optionTitle: 'Combination of both', // needs more
-            pointsTo: 4
+            pointsTo: 4, 
+            typeOfAnswer: 'C'
             }
         ], 
     }, 
@@ -21,11 +24,14 @@ export const questionsAndOptions = [
         questionTitle: 'In which way do you typically study for a test?', 
         options: [
             {optionTitle: 'Memorizing contents of index cards', 
-            pointsTo: 5
+            pointsTo: 5, 
+            typeOfAnswer: 'A'
             }, 
             {
                 optionTitle: 'Read the book(s) or your notes', 
-                pointsTo: 6
+                pointsTo: 6, 
+                typeOfAnswer: 'B'                
+
             }
         
              ]
@@ -37,11 +43,13 @@ export const questionsAndOptions = [
         options: [
             {
              optionTitle: 'Learning by doing. Hands on experience', 
-            pointsTo: 7
+            pointsTo: 7, 
+            typeOfAnswer: 'C'
             }, 
         {
             optionTitle: 'Learning by observing or watching someone do the task', 
-            pointsTo: 8
+            pointsTo: 8, 
+            typeOfAnswer: 'A'
         }
         ]
     }, 
@@ -67,7 +75,8 @@ export const questionsAndOptions = [
         options: [
             {
                 optionTitle: 'Watching a video explanation.',
-                pointsTo: null // end
+                pointsTo: 0,  // end
+                typeOfAnswer: 'A'
             }, 
             {
                 optionTitle: 'Reading an article, blog, or book on the topic', 
@@ -81,11 +90,11 @@ export const questionsAndOptions = [
         options: [
             {
                 optionTitle: 'tbd',
-                pointsTo: null
+                pointsTo: 0
             }, 
             {
                 optionTitle: 'tbd', 
-                pointsTo: null 
+                pointsTo: 0 
             }, 
         ]
     }, 
@@ -95,11 +104,11 @@ export const questionsAndOptions = [
         options: [
             {
                 optionTitle: 'Group work, working with others on projects. ',
-                pointsTo: null // end 
+                pointsTo: 0 // end 
             }, 
             {
                 optionTitle: 'Working independently or by yourself.', 
-                pointsTo: null // end
+                pointsTo: 0 // end
             }, 
         ]
     }, 
@@ -110,11 +119,13 @@ export const questionsAndOptions = [
         options: [
             {
                 optionTitle: 'Picture the numbers on your phone.',
-                pointsTo: null // end 
+                pointsTo: 0,  // end 
+                typeOfAnswer: 'A'
             }, 
             {
-                optionTitle: 'Write it down on a piece of paoer. ', 
-                pointsTo: null // end
+                optionTitle: 'Write it down on a piece of paper. ', 
+                pointsTo: 0, // end
+                typeOfAnswer: 'B'
             }, 
         ]
     }, 
@@ -125,11 +136,11 @@ export const questionsAndOptions = [
         options: [
             {
                 optionTitle: 'More help available',
-                pointsTo: null // end 
+                pointsTo: 0 // end 
             }, 
             {
                 optionTitle: 'Limited capacity, maybe one or two times a week.', 
-                pointsTo: null // end
+                pointsTo: 0 // end
             }, 
         ]
     }
