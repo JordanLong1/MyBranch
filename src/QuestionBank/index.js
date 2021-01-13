@@ -21,7 +21,7 @@ export const questionsAndOptions = [
     }, 
     {
         questionId: 2, 
-        questionTitle: 'In which way do you typically study for a test?', 
+        questionTitle: 'What works better for you when studying for a test?', 
         options: [
             {optionTitle: 'Memorizing contents of index cards', 
             pointsTo: 5, 
@@ -56,15 +56,22 @@ export const questionsAndOptions = [
 
     {
         questionId: 4, 
-        questionTitle: 'When learning a new skill, what pace do you prefer to work at?', 
+        questionTitle: 'When choosing a career area of study, I would:', 
         options: [
             {
-                optionTitle: 'Self paced with little to no structure.',
-                pointsTo: 9
+                optionTitle: 'Work with designs, maps or charts.',
+                pointsTo: 9, 
+                typeOfAnswer: 'A'
             }, 
             {
-                optionTitle: 'Faster pace with more structure.', 
-                pointsTo: 10
+                optionTitle: 'Use words well in written communications.', 
+                pointsTo: 10, 
+                typeOfAnswer: 'B'
+            }, 
+            {
+                optionTitle: 'A little bit of both.', 
+                pointsTo: 0, 
+                typeOfAnswer: 'C'
             }, 
            
         ]
@@ -80,35 +87,45 @@ export const questionsAndOptions = [
             }, 
             {
                 optionTitle: 'Reading an article, blog, or book on the topic', 
-                pointsTo: 10 // end of branch
+                pointsTo: 10, // end of branch
+                typeOfAnswer: 'B'
             }, 
         ]
     }, 
     {
-        questionId: 6, 
-        questionTitle: 'Question 6', 
+        questionId: 6, // B points here.
+        questionTitle: 'You want to put together a new desk from Ikea, how would you approach the task?', 
         options: [
             {
-                optionTitle: 'tbd',
-                pointsTo: 0
+                optionTitle: 'Start with the directions given.',
+                pointsTo: 0, 
+                typeOfAnswer: 'B'
             }, 
             {
-                optionTitle: 'tbd', 
-                pointsTo: 0 
+                optionTitle: `Search "how to" on Youtube.`, 
+                pointsTo: 0, 
+                typeOfAnswer: 'A'
             }, 
         ]
     }, 
     {
         questionId: 7, 
-        questionTitle: 'Which environment do you succeed in more?', 
+        questionTitle: 'What sort of school assignments do you enjoy the most? ', 
         options: [
             {
-                optionTitle: 'Group work, working with others on projects. ',
-                pointsTo: 0 // end 
+                optionTitle: 'Memorizing assignments, video lectures, watching and listening to the teacher give a lecture.',
+                pointsTo: 0, // end 
+                typeOfAnswer: 'A'
             }, 
             {
-                optionTitle: 'Working independently or by yourself.', 
-                pointsTo: 0 // end
+                optionTitle: 'Writing essays, book reports, written tests.', 
+                pointsTo: 0, // end
+                typeOfAnswer: 'B'
+            }, 
+            {
+                optionTitle: 'A little bit of both.', 
+                pointsTo: 0, // end
+                typeOfAnswer: 'C'
             }, 
         ]
     }, 
@@ -132,15 +149,23 @@ export const questionsAndOptions = [
 
     {
         questionId: 9, 
-        questionTitle: 'Do you like having more help available or would you prefer to only have help in a limited capacity?', 
+        questionTitle: 'A website has a video showing how to make a special graph or chart. There is a person speaking, some lists and words describing what to do and some diagrams. I would learn most from:', 
         options: [
             {
-                optionTitle: 'More help available',
-                pointsTo: 0 // end 
+                optionTitle: 'Watching the actions',
+                pointsTo: 0 ,// end 
+                typeOfAnswer: 'A'
             }, 
             {
-                optionTitle: 'Limited capacity, maybe one or two times a week.', 
-                pointsTo: 0 // end
+                optionTitle: 'Reading the captions', 
+                pointsTo: 0, // end
+                typeOfAnswer: 'B'
+            }, 
+
+            {
+                optionTitle: 'Seeing the diagrams.', 
+                pointsTo: 0,  // end
+                typeOfAnswer: 'A'
             }, 
         ]
     }
