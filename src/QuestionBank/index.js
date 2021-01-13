@@ -1,12 +1,17 @@
-import firstImage from '../Learning Images/first-learning-img.png'
-import brainMap from '../Learning Images/brain-map.jpg'
-import rocketLearning from '../Learning Images/rocket-learning.jpg'
-import pencilLearning from '../Learning Images/pencil-learning.jpg'
-import hybridLearning from '../Learning Images/hybrid-learning.jpg'
-import jugglingSkills from '../Learning Images/juggling-skills.jpg'
-import classroomLearning from '../Learning Images/classroom-learning.png'
-import partnerLearning from '../Learning Images/partner-learning.jpeg'
-import learningInSteps from '../Learning Images/learning-4-steps.jpg'
+import firstImage from '../Learning Images/first-learning-img.png';
+import brainMap from '../Learning Images/brain-map.jpg';
+import rocketLearning from '../Learning Images/rocket-learning.jpg';
+import pencilLearning from '../Learning Images/pencil-learning.jpg';
+import hybridLearning from '../Learning Images/hybrid-learning.jpg';
+import jugglingSkills from '../Learning Images/juggling-skills.jpg';
+import classroomLearning from '../Learning Images/classroom-learning.png';
+import partnerLearning from '../Learning Images/partner-learning.jpeg';
+import learningInSteps from '../Learning Images/learning-4-steps.jpg';
+import eLearning from '../Learning Images/e-learning.jpg';
+import readinImg from '../Learning Images/reading-img.png';
+import learningGif from '../Learning Images/learning.gif';
+import musicLearning from '../Learning Images/music-learning.png';
+import brainImg from '../Learning Images/brain-img.jpg';
 
 export const questionsAndOptions = [
     {questionId: 1, 
@@ -19,7 +24,7 @@ export const questionsAndOptions = [
              typeOfAnswer: 'A'
             }, 
             {
-            optionTitle: 'Face-face-interaction', // done here for now. 
+            optionTitle: 'In person / Face-face interaction', // done here for now. 
             pointsTo: 3, 
             typeOfAnswer: 'B',             
             }, 
@@ -84,7 +89,7 @@ export const questionsAndOptions = [
             }, 
             {
                 optionTitle: 'A little bit of both.', 
-                pointsTo: 0, 
+                pointsTo: 11, 
                 typeOfAnswer: 'C'
             }, 
            
@@ -114,12 +119,12 @@ export const questionsAndOptions = [
         options: [
             {
                 optionTitle: 'Start with the directions given.',
-                pointsTo: 0, 
+                pointsTo: 12, 
                 typeOfAnswer: 'B'
             }, 
             {
                 optionTitle: `Search "how to" on Youtube.`, 
-                pointsTo: 0, 
+                pointsTo: 13, 
                 typeOfAnswer: 'A'
             }, 
         ]
@@ -136,7 +141,7 @@ export const questionsAndOptions = [
             }, 
             {
                 optionTitle: 'Writing essays, book reports, written tests.', 
-                pointsTo: 0, // end
+                pointsTo: 14, // end
                 typeOfAnswer: 'B'
             }, 
             {
@@ -154,7 +159,7 @@ export const questionsAndOptions = [
         options: [
             {
                 optionTitle: 'Picture the numbers on your phone.',
-                pointsTo: 0,  // end 
+                pointsTo: 15,  // end 
                 typeOfAnswer: 'A'
             }, 
             {
@@ -186,6 +191,128 @@ export const questionsAndOptions = [
                 pointsTo: 0,  // end
                 typeOfAnswer: 'A'
             }, 
+        ]
+    }, 
+    {
+        questionId: 10, 
+        questionTitle: 'You find reading:', 
+        questionImage: readinImg,
+        options: [
+            {
+                optionTitle: 'The best and most relaxing thing ever.',
+                pointsTo: 0 ,// end 
+                typeOfAnswer: 'B'
+            }, 
+            {
+                optionTitle: `Takes too long; you'd rather watch a video`, 
+                pointsTo: 0, // end
+                typeOfAnswer: 'C'
+            }, 
+
+            {
+                optionTitle: `You'd rather be outside working on something or doing something else.`, 
+                pointsTo: 0,  // end
+                typeOfAnswer: 'C'
+            }, 
+        ]
+    }, 
+    {
+        questionId: 11, 
+        questionTitle: `When you see or hear the word "cat", what do you do?`, 
+        options: [
+            {
+                optionTitle: 'Picture a cat in your mind', 
+                pointsTo: 0, 
+                typeOfAnswer: 'A'
+            }, 
+            {
+                optionTitle: `Say the word "cat" to yourself.`, 
+                pointsTo: 0, 
+                typeOfAnswer: 'B'
+            }, 
+            {
+                optionTitle: 'Think about being with a cat', 
+                pointsTo: 0, 
+                typeOfAnswer: 'C'
+            }
+        ]
+    }, 
+    {
+        questionId: 12, 
+        questionTitle: `Do you enjoy charts and graphs?`, 
+        questionImage: learningGif,
+        options: [
+            {
+                optionTitle: `No, I can't stand working with them.`, 
+                pointsTo: 0, 
+                typeOfAnswer: 'B'
+            }, 
+            {
+                optionTitle: 'Yes I love them!', 
+                pointsTo: 0, 
+                typeOfAnswer: 'A'
+            }
+        ]
+    }, 
+    {
+        questionId: 13, 
+        questionTitle: `Which technique helped you learn multiplication tabeles the best?`, 
+        questionImage: eLearning,
+        options: [
+            {
+                optionTitle: `Writing them out over and over.`, 
+                pointsTo: 0, 
+                typeOfAnswer: 'B'
+            }, 
+            {
+                optionTitle: `Quickly reviewing flashcards.`, 
+                pointsTo: 0, 
+                typeOfAnswer: 'A'
+            }, 
+            {
+                optionTitle: `Practicing out loud with a friend.`, 
+                pointsTo: 0, 
+                typeOfAnswer: 'C'
+            }
+        ]
+    }, 
+    {
+        questionId: 14, 
+        questionTitle: `When asked to give directions, I:`, 
+        questionImage: brainImg,
+        options: [
+            {
+                optionTitle: `A combination of the two answers below.`, 
+                pointsTo: 0, 
+                typeOfAnswer: 'C'
+            }, 
+            {
+                optionTitle: `See the actual places in my mind or prefer to draw them`, 
+                pointsTo: 0, 
+                typeOfAnswer: 'A'
+            }, 
+            {
+                optionTitle: `Prefer to write them down on a piece of paper.`, 
+                pointsTo: 0, 
+                typeOfAnswer: 'B'
+            }
+        ]
+    }, 
+    {
+        questionId: 15, 
+        questionTitle: `When listening to music, which method do you prefer?`, 
+        questionImage: musicLearning,
+        options: [
+            {
+                optionTitle: `Just listening to the song without the video.`, 
+                pointsTo: 0, 
+                typeOfAnswer: 'B'
+            }, 
+            {
+                optionTitle: `Watching the music video.`, 
+                pointsTo: 0, 
+                typeOfAnswer: 'A'
+            }
         ]
     }
 ]
