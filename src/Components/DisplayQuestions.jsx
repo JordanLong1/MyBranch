@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
-import {questionsAndOptions} from '../QuestionBank/index'
-import {EndOfBranchDisplay} from './EndOfBranchDisplay'
+import React, {useState} from 'react';
+import {questionsAndOptions} from '../QuestionBank/index';
+import {EndOfBranchDisplay} from './EndOfBranchDisplay';
 
-import {Menu} from 'react-feather'
+import {Menu} from 'react-feather';
 
 export default function DisplayQuestion() {
 
@@ -12,28 +12,28 @@ export default function DisplayQuestion() {
     
     const handleClick = (e) => {
 
-        handleClickHelper(e) // this function was getting bulky, needed some abstraction
+        handleClickHelper(e); // this function was getting bulky, needed some abstraction
 
-        let pointsToValue = e.target.id; 
+        let pointsToValue = e.target.id; // this value dictates the next question. 
 
-        pointsToValue = parseInt(e.target.id, 10)
+        pointsToValue = parseInt(e.target.id, 10);
 
         if ( pointsToValue !== 0) {
-            const nextQuestion = questionsAndOptions.find(question => question.questionId === pointsToValue)
+            const nextQuestion = questionsAndOptions.find(question => question.questionId === pointsToValue);
             setCurrentQuestion(nextQuestion);  
         } else {
-            setEndOfBranch(true)
-        }
-    }
+            setEndOfBranch(true);
+        };
+    };
 
     const handleClickHelper = (e) => {
         const answerType = e.target.attributes[1].nodeValue; 
 
-        let resultArray = [...results]
+        let resultArray = [...results];
 
-        resultArray.push(answerType)
+        resultArray.push(answerType);
 
-        setResults(resultArray)
+        setResults(resultArray);
     }
 
     return (
@@ -50,5 +50,5 @@ export default function DisplayQuestion() {
         </div>
         {endOfBranch === true ? <EndOfBranchDisplay results={results} /> : <div></div>}
         </div>
-    )
-}
+    );
+};

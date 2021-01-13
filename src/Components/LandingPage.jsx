@@ -12,7 +12,7 @@ export const LandingPage = () => {
     return (
         <header className='landing-page-container'>
         <h1>Welcome to Jordan Long's Branching Scenario</h1>
-        <p>We are going to cover the four different learning styles!</p>
+        <p>We are going to assess your learning style!</p>
         <button onClick={handleClick}>Get Started</button>
         </header>
     ); 
