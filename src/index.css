@@ -45,20 +45,36 @@ body {
 }
 
 .question-section {
-  width: 90%;
- 
+  width: 50%;
+}
+
+.question-section h4{
+  height: 75px;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 li {
+  margin: 0.2em;
   padding: 1em;
   list-style: none;
   border: solid 1px black; 
   cursor: pointer;
   font-size: large;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 li:hover {
   font-size: larger;
-  color: green;
-  border: solid 2px green;
+  background-color: #03cffc;
+  border: solid 2px black;
+}
+
+.menu-icon {
+  padding-top: 5px;
+  padding-right: 2em;
 }
