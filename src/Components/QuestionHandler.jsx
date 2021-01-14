@@ -1,10 +1,9 @@
 import React from 'react'; 
 
-function QuestionHandler({questionTitle, questionImg, children}) {
-
+function QuestionHandler({questionTitle, questionImg, children, endOfBranch}) {
     let createListOfOptions;
-
-    if (children().length > 0) {
+    
+    if (children().length > 0 && endOfBranch !== true) {
         createListOfOptions = children().map((option, index) => {
             return <li key={index} id={option.props.id} typeofanswer={option.props.typeofanswer} onClick={option.props.onHandleClick}>{option.props.children}</li>
         })
