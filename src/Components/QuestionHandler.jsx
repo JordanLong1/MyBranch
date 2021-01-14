@@ -1,4 +1,5 @@
 import React from 'react'; 
+import PropTypes from 'prop-types';
 
 function QuestionHandler({questionTitle, questionImg, children, endOfBranch}) {
     let createListOfOptions;
@@ -7,17 +8,28 @@ function QuestionHandler({questionTitle, questionImg, children, endOfBranch}) {
         createListOfOptions = children().map((option, index) => {
             return <li key={index} id={option.props.id} typeofanswer={option.props.typeofanswer} onClick={option.props.onHandleClick}>{option.props.children}</li>
         })
-    }
+    } 
 
     return (
         <div className='question-section'>
-            <h4>{questionTitle}</h4>
+        {endOfBranch !== true ? 
+            <div>
+                 <h4>{questionTitle}</h4>
             <div className='image-section'><img src={questionImg} alt='' ></img></div>
-            <ul>
-            {createListOfOptions}
-            </ul>
+                <ul>
+                {createListOfOptions}
+                </ul>
+            </div>
+             : null}
         </div>
     )
 }
 
 export default QuestionHandler
+
+QuestionHandler.propTypes = {
+    questionTitle: PropTypes.string.isRequired, 
+    questionImg: PropTypes.string.isRequired, 
+    children: PropTypes.func.isRequired, 
+    endOfBranch: PropTypes.bool.isRequired
+};
