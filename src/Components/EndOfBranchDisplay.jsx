@@ -34,8 +34,9 @@ export const EndOfBranchDisplay = ({results}) => {
     
     
     return (
-        <section>
-        <h2>Congragulations! You have made it to the end of the session.</h2>
+        <section className='ending-results-section'>
+        <h2>Congragulations!</h2>
+        <p>You have made it to the end of the session.</p>
         <p>Your learning style results are available below.</p>
         <p>These results are accumulated by which option you chose for each question.</p>
         <section>
