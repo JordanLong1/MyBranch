@@ -132,6 +132,19 @@ li:hover {
 }
 
 @media screen and (min-width: 320px) and (max-width: 900px) {
+
+  .landing-page-container h1 {
+    text-align: center;
+  }
+
+  .landing-page-container button {
+    width: 30%;
+    background-color: black;
+    color: white;
+  }
+
+
+
   .question-container {
     display: flex;
     flex-direction: column;
