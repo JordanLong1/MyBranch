@@ -130,3 +130,45 @@ li:hover {
   padding-top: 5px;
   padding-right: 2em;
 }
+
+@media screen and (min-width: 320px) and (max-width: 900px) {
+  .question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .question-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .question-section h4 {
+    border: none;
+    text-align: center;
+  }
+
+  ul {
+    justify-content: center;
+    
+  }
+
+  li {
+    margin-right: 40px;
+  text-align: center;
+  }
+
+  .ending-results-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+}
+
+/* @media screen and (max-width: ) */
