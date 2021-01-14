@@ -33,7 +33,7 @@ export default function DisplayQuestion() {
     
     return (
         <div className='question-container'>
-          <QuestionHandler questionTitle={currentQuestion.questionTitle} questionImg={currentQuestion.questionImage} children={getOptionsIntoList}/>
+          <QuestionHandler questionTitle={currentQuestion.questionTitle} questionImg={currentQuestion.questionImage} children={getOptionsIntoList} endOfBranch={endOfBranch}/>
              {endOfBranch === true ? <EndOfBranchDisplay results={results} /> : <div></div>}
         </div>
     );
