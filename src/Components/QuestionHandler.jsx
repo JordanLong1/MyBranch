@@ -1,22 +1,21 @@
 import React from 'react'; 
 
-function QuestionHandler(props) {
+function QuestionHandler({questionTitle, questionImg, children}) {
 
-    let makeListOfOptions;
+    let createListOfOptions;
 
-    if (props.children().length > 0) {
-        makeListOfOptions = props.children().map((option, index) => {
+    if (children().length > 0) {
+        createListOfOptions = children().map((option, index) => {
             return <li key={index} id={option.props.id} typeofanswer={option.props.typeofanswer} onClick={option.props.onHandleClick}>{option.props.children}</li>
         })
     }
 
-
     return (
-        <div>
-            <h4>{props.questionTitle}</h4>
-            <div><img src={props.questionImg} alt='' ></img></div>
+        <div className='question-section'>
+            <h4>{questionTitle}</h4>
+            <div className='image-section'><img src={questionImg} alt='' ></img></div>
             <ul>
-            {makeListOfOptions}
+            {createListOfOptions}
             </ul>
         </div>
     )
