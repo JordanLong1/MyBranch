@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {questionsAndOptions} from '../QuestionBank/index';
 import { EndOfBranchDisplay } from './EndOfBranchDisplay';
-import QuestionHandler from './QuestionHandler'
+import QuestionPresentation from './QuestionPresentation'
 
-export default function DisplayQuestion() {
+export default function QuestionLogic() {
 
     const [currentQuestion, setCurrentQuestion] = useState(questionsAndOptions[0]);
     const [endOfBranch, setEndOfBranch] = useState(false);
@@ -33,7 +33,7 @@ export default function DisplayQuestion() {
     
     return (
         <div className='question-container'>
-          <QuestionHandler questionTitle={currentQuestion.questionTitle} questionImg={currentQuestion.questionImage} children={getOptionsIntoList} endOfBranch={endOfBranch}/>
+          <QuestionPresentation questionTitle={currentQuestion.questionTitle} questionImg={currentQuestion.questionImage} children={getOptionsIntoList} endOfBranch={endOfBranch}/>
              {endOfBranch === true ? <EndOfBranchDisplay results={results} /> : null}
         </div>
     );

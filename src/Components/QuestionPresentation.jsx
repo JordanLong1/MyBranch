@@ -1,7 +1,7 @@
 import React from 'react'; 
 import PropTypes from 'prop-types';
 
-function QuestionHandler({questionTitle, questionImg, children, endOfBranch}) {
+function QuestionPresentation({questionTitle, questionImg, children, endOfBranch}) {
     let createListOfOptions;
     
     if (children().length > 0 && endOfBranch !== true) {
@@ -25,9 +25,9 @@ function QuestionHandler({questionTitle, questionImg, children, endOfBranch}) {
     )
 }
 
-export default QuestionHandler
+export default QuestionPresentation
 
-QuestionHandler.propTypes = {
+QuestionPresentation.propTypes = {
     questionTitle: PropTypes.string.isRequired, 
     questionImg: PropTypes.string.isRequired, 
     children: PropTypes.func.isRequired, 

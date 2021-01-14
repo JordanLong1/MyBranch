@@ -1,5 +1,5 @@
 import React from 'react';
-import DisplayQuestions from './DisplayQuestions'
+import QuestionLogic from './QuestionLogic'
 import NavBar from './NavBar'
 
 import {BrowserRouter, Route} from 'react-router-dom'
@@ -12,7 +12,7 @@ function Routes() {
    <NavBar />
      <BrowserRouter>
        <Route exact path='/' component={LandingPage} />
-        <Route exact path='/displayquestion' component={DisplayQuestions}/>
+        <Route exact path='/displayquestion' component={QuestionLogic}/>
         <Route exact path='/endbranch' component={EndOfBranchDisplay}/>
    </BrowserRouter>
    </div>
