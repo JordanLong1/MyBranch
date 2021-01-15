@@ -10,8 +10,8 @@ export default function QuestionLogic() {
     const [results, setResults] = useState([]);
     
     const handleClick = (event) => {
-        handleClickHelper(event); // this function was getting bulky, needed some abstraction
-        let pointsToValue = event.target.id; // this value dictates the next question. 
+        handleClickHelper(event);
+        let pointsToValue = event.target.id; 
         pointsToValue = parseInt(event.target.id, 10);
         let nextQuestion = questionsAndOptions.find(question => question.questionId === pointsToValue);
         pointsToValue !== 0 ?  setCurrentQuestion(nextQuestion) : setEndOfBranch(true);
