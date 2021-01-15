@@ -12,6 +12,8 @@ import readinImg from '../Learning Images/reading-img.png';
 import learningGif from '../Learning Images/learning.gif';
 import musicLearning from '../Learning Images/music-learning.png';
 import brainImg from '../Learning Images/brain-img.jpg';
+import garfield from '../Learning Images/garfield.jpg';
+
 
 export const questionsAndOptions = [
     {questionId: 1, 
@@ -219,6 +221,7 @@ export const questionsAndOptions = [
     {
         questionId: 11, 
         questionTitle: `When you see or hear the word "cat", what do you do?`, 
+        questionImage: garfield,
         options: [
             {
                 optionTitle: 'Picture a cat in your mind', 
