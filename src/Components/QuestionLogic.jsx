@@ -32,9 +32,9 @@ export default function QuestionLogic() {
 
     
     return (
-        <div className='question-container'>
+        <section className='question-container'>
           <QuestionPresentation questionTitle={currentQuestion.questionTitle} questionImg={currentQuestion.questionImage} children={getOptionsIntoList} endOfBranch={endOfBranch}/>
              {endOfBranch === true ? <EndOfBranchDisplay results={results} /> : null}
-        </div>
+        </section>
     );
 };
