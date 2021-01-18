@@ -14,7 +14,7 @@ export default function QuestionLogic() {
         let pointsToValue = event.target.id; 
         pointsToValue = parseInt(event.target.id, 10);
         let nextQuestion = questionsAndOptions.find(question => question.questionId === pointsToValue);
-        pointsToValue !== 0 ?  setCurrentQuestion(nextQuestion) : setEndOfBranch(true);
+        pointsToValue !== 0 ?  setCurrentQuestion(nextQuestion) : setEndOfBranch(end => !end);
     };
 
     const handleClickHelper = (event) => {
